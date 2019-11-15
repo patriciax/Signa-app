@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>recibos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<!-- List of Text Items -->
+<ion-list>
+    <ion-item *ngFor="let nomina of nominas">
+      <ion-label>{{nomina.fecha_inicio}} {{nomina.fecha_fin}}</ion-label>
+      <button (click)="mostrarNomina(nomina.id)">boton</button>
+    </ion-item>
+  </ion-list>
+  
+  <!-- List of Input Items -->
+  
+</ion-content>

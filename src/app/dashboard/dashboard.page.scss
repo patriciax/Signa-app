@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+.dash {
+    background: #4200c4;
+    padding: 50px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+
+    h1{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        color: #fff;
+    }
+    p{
+        font-family: 'Josefin Sans', sans-serif;
+        color: #fff;
+    }
+
+    
+}
+
+.select {
+    display: grid;
+    justify-content: center;
+    margin-top: -50px;
+
+    background: red;
+
+    a{
+        background:#fff;
+        color: #4200c4;
+        text-align: center;
+        padding: 80px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px #00000075;
+        margin: 20px;
+        position: relative;
+    }
+
+    a:nth-child(1){
+        background: url(https://images.unsplash.com/photo-1544725121-be3bf52e2dc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=747&q=80);
+        background-size: 100%;
+        color: #fff;
+    }
+
+    &::before{
+        background: red;
+        position: absolute;
+
+    }
+}

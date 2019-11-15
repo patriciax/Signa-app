@@ -1,0 +1,68 @@
+
+.content-login {
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .input-style {
+        box-shadow: 0 0 5px #00000030;
+        border-radius: 20px;
+        padding: 4px!important;
+        margin-bottom: 50px;
+    }
+    .icon-style{
+        opacity: .4;
+        margin-left: 12px;
+    }
+    
+    .btn-login{
+        border-radius: 20px;
+        background: #4200c4;
+        padding: 15px 100px 15px;
+        color: #fff;
+    }
+   
+
+    h1{
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    .circle{
+        text-align: center;
+    }
+    span{
+       
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        border-radius: 100%;
+        top: 90px;
+
+        &:nth-child(1){
+            background: #5ce1e6;
+            left: 20%;
+        }
+
+        &:nth-child(2){
+            background: #38b6ff;
+            left: 35%;
+        }
+        &:nth-child(3){
+            background: #4200c4;
+            right: 23%;
+            
+        }
+    }
+  
+ 
+
+
+}
+
