@@ -1,3 +1,63 @@
 .list{
     padding: 10px 30px 0 14px;
 }
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+.dash {
+    background: #4200c4;
+    padding: 50px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+
+    h1{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        margin: 0;
+    }
+    p{
+        font-family: 'Josefin Sans', sans-serif;
+        color: #fff;
+    }
+
+    a{
+     
+        position: absolute;
+        right: -12px;
+        margin-right: 50px;
+        top: 50px;
+        color: #fff;
+    
+    }
+
+    
+}
+
+.item-inner{
+        background: #03A9F4!important;
+        border-radius: 10px;
+  
+
+ }
+
+ .list-nomina{
+    margin: 20px;
+    margin-top: -34px;
+    border-radius: 10px;
+ }
+
+ button{
+    background: #03A9F4;
+    padding: 6px;
+    border-radius: 50%;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    font-size: 1rem;
+    font-weight: 800;
+ }
+
+ .hydrated {
+    visibility: inherit;
+    margin-bottom: 25px;
+}

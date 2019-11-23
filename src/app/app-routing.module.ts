@@ -7,6 +7,8 @@ const routes: Routes = [
   // { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
   { path: 'recibos', loadChildren: './recibos/recibos.module#RecibosPageModule' },
+  { path: 'mostrar-recibos/:id', loadChildren: './mostrar-recibos/mostrar-recibos.module#MostrarRecibosPageModule' },
+  { path: 'constancia', loadChildren: './constancia/constancia.module#ConstanciaPageModule' },
 
 ];
 

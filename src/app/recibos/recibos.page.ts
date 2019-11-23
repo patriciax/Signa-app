@@ -1,9 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { UrlService } from "../services/url.service";
+import { NavController } from "@ionic/angular";
+import {Router} from '@angular/router';
 
-import { ModalController } from '@ionic/angular';
-import { ModalPage } from '../modal/modal.page';
 @Component({
   selector: "app-recibos",
   templateUrl: "./recibos.page.html",
@@ -12,11 +12,14 @@ import { ModalPage } from '../modal/modal.page';
 export class RecibosPage implements OnInit {
   storage: any;
   nominas: any;
+  conceptos: any;
 
   constructor(
     private http: HttpClient,
     private urlService: UrlService,
-    public modalCtrl: ModalController
+    private nav: NavController,
+     private router: Router
+
   ) {
     this.storage = localStorage;
   }
@@ -25,7 +28,9 @@ export class RecibosPage implements OnInit {
     this.fetch();
   }
 
-  
+  goBack(){
+    this.router.navigateByUrl('/dashboard')
+  }
 
   fetch() {
     this.http
@@ -39,14 +44,12 @@ export class RecibosPage implements OnInit {
       });
   }
 
-  async presentModal() {
-    const modal = await this.modalController.create({
-      component: ModalPage
-    });
-    return await modal.present();
+  mostrarNomina(id) {
+
+    this.nav.navigateForward('/mostrar-recibos/'+id)
     
   }
-  mostrarNomina(id) {
+  /*mostrarNomina(id) {
     const mostrarRecibo = this.modalCtrl.create(MostrarRecibosPage);
     mostrarRecibo.present();
     this.http
@@ -57,5 +60,5 @@ export class RecibosPage implements OnInit {
       .subscribe((response: any) => {
         console.log(response);
       });
-  }
+  }*/
 }

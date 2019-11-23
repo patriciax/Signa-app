@@ -1,15 +1,34 @@
-
-
 <ion-content>
-<div class="dash">
- <h1>Dashboard</h1>
-  <p>lalalalala</p>
-</div>
+  <div class="dash">
+    <h1>Dashboard  <a (click)="goBack()"><img src="/assets/bx-log-out.svg" alt=""></a></h1>
+    <p>Elige una opcion</p>
+  </div>
 
 
-<div class="select">
-    <a  (click)="goToRecibos()">Consultar recibo de pago</a>
-    <a  (click)="goToConstacia()">Generar constancia de trabajo</a>
-</div>
+  <div class="select">
+    <a (click)="goToRecibos()">
+      <div class="bg-card">
+        <span>Consultar</span><br>
+        <span> Recibo de pago</span>
+        
+      </div>
+    </a>
+
+    <a (click)="goToConstacia()">
+      <div class="bg-card">
+         
+        Generar constancia
+      </div>
+    </a>
+
+
+
+
+
+  </div>
+
+
+
+ 
 
 </ion-content>

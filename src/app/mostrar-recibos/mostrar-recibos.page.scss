@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+.dash {
+    background: #4200c4;
+    padding: 50px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+
+    h1{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        margin: 0;
+    }
+    p{
+        font-family: 'Josefin Sans', sans-serif;
+        color: #fff;
+    }
+    a{
+     
+        position: absolute;
+        right: -12px;
+        margin-right: 50px;
+        top: 50px;
+        color: #fff;
+    
+    }
+
+    
+}
+
+
+
+.concepto_desc{
+    text-transform: lowercase;
+    width: 50%;
+}
+
+.concepto_monto{
+
+    margin-left: 20%;
+}
+
+.header_list{
+
+}
+
+.lalala{
+    // box-shadow: 0 0 5px #00000057;
+    margin: 8px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    margin-bottom: 15px;
+
+}
+
+.header_list{
+    padding-right: 50px;
+}
+
+.box{
+    margin: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #00000052;
+    z-index: 9;
+    // margin-top: -30px;
+}
+
+.box-monto{
+    margin: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #00000052;
+    z-index: 9;
+    margin-top: -50px;
+
+    padding: 30px;
+    text-align: center;
+    color: #000;
+    background: #ffffff;
+  
+    font-weight: 600;
+}
+.box-asignacion{
+
+    text-align: center;
+    color: #fff;
+
+    gap: 15px;
+    font-weight: 600;
+    margin: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  p{
+
+    z-index: 9;
+    padding: 25px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 5px #00000052;
+    &:nth-child(1){
+        background: #38b6ff;
+    }
+
+    &:nth-child(2){
+        background: #4200c4;
+    }
+  }
+}
+
+
+// .box-deduc{
+//     margin: 12px;
+//     border-radius: 10px;
+//     box-shadow: 0 0 5px #00000052;
+//     z-index: 9;
+//     padding: 30px;
+//     text-align: center;
+//     color: #fff;
+//     background: #2196F3;
+//     font-weight: 600;
+//     margin-bottom: 25px;
+// }
+
+.nav-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    background: white;
+    width: 100%;
+    text-align: center;
+    height: 52px;
+    bottom: 0;
+    box-shadow: 0 0 5px #00000069;
+    z-index: 9;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.type{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+}
+

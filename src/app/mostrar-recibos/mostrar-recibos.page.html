@@ -1,0 +1,67 @@
+<ion-content>
+  <div class="dash">
+    <h1>
+      Recibo
+      <a (click)="goBack()"><img src="/assets/bx-user.svg" alt="" /></a>
+    </h1>
+    <p>Detalles de recibo</p>
+  </div>
+
+  <ion-list class="box-monto">
+    <p>Total a cobrar: {{total}} Bs</p>
+  </ion-list>
+
+  <ion-list class="box-asignacion">
+    <p> Asignaciones: {{asignaciones}} Bs</p>
+    <p> Deducciones: {{deducciones}} Bs</p>
+  </ion-list>
+
+  <ion-list class="box">
+    <ion-list-header class="header_list">
+      <ion-label>
+        <p class="type">Descripción</p>
+      </ion-label>
+      <ion-label>
+        <p class="type">Monto</p>
+      </ion-label>
+    </ion-list-header>
+    <ion-item class="lalala" *ngFor="let concepto of conceptos">
+      <p class="concepto_desc">
+        {{concepto.descripcion}}
+      </p>
+      <p class="concepto_monto">
+        <ion-label>
+          <span *ngIf="concepto.tipo == 'deduccion'">
+            -
+          </span>
+          {{concepto.monto}}bs
+        </ion-label>
+      </p>
+    </ion-item>
+  </ion-list>
+
+  <!-- <ion-list>
+    <ion-item>
+      <ion-label>
+        Asignaciones: {{asignaciones}}
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Deducciones: {{deducciones}}
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Total: {{total}}
+      </ion-label>
+    </ion-item>
+  </ion-list>-->
+</ion-content> 
+
+  
+<div class="nav-bottom">
+    <a (click)="goBack()"><img src="/assets/salirz.svg" alt=""></a>
+    <a (click)="goBack()"><img src="/assets/bx-home.svg" alt=""></a>
+    <a (click)="goBack()"><img src="/assets/atras.svg" alt=""></a>
+</div> 
