@@ -19,4 +19,9 @@ export class DashboardPage implements OnInit {
 
   }
 
+  goToConstacia(){
+    this.router.navigateByUrl('/constancia')
+
+  }
+
 }
